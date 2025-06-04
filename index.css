@@ -105,6 +105,7 @@ h2{
     outline: none;
     margin: 0;
     padding: 0;
+    -webkit-appearance: none;
 }
 
 video{
@@ -114,6 +115,9 @@ video{
     outline: none;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 button{
