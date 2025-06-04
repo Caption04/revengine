@@ -94,7 +94,7 @@ h2{
 
 .contact-link{
     color: black;
-    font-size: 21px;
+    font-size: clamp(21px, 1vw + 0.1rem, 31px);
 }
 
 .contact-link:visited{
