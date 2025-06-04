@@ -97,6 +97,10 @@ h2{
     font-size: 21px;
 }
 
+.contact-link:visited{
+    color: black;
+}
+
 /* HEader end */
 .hero-graphic{
     width: 20vw;
