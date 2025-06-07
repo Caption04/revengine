@@ -171,7 +171,7 @@ h1{
     border-right: 1px solid white;
     font-family: var(--ff-primary);
     font-weight: bold;
-    font-size: clamp(15px, 2vw + 0.1rem, 60px);
+    font-size: clamp(12px, 2vw + 0.1rem, 60px);
     text-align: center;
     color: white;
     white-space: nowrap;  /* Prevent text wrapping */
