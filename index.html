@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rev Engine is a digital marketing agency in Zimbabwe. We offer search engine optimization, web design, and copywriting for ads." />
+    <!-- Basic Open Graph -->
+    <meta property="og:title" content="Rev Engine - Digital Marketing for Zimbabwean Businesses">
+    <meta property="og:description" content="We use Google Ads and analytics to help Zimbabwean businesses grow online.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta property="og:url" content="https://www.revengine.co.za">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rev Engine - Digital Marketing for Zimbabwean Businesses">
+    <meta name="twitter:description" content="We use Google Ads and analytics to help Zimbabwean businesses grow online.">
+    <meta name="twitter:image" content="og-image.jpg">
+
+    
     <title>Rev Engine | Professional Web Design & Marketing Zimbabwe</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -18,7 +32,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    </noscript>
     <script src="index.js" defer></script>
 
     <!-- Schema.org telling google what the business is all about -->
@@ -59,9 +76,9 @@
 <body>
     <section class="hero" id="hero">
         <header class="header header-drop">
-            <a href="index.html" class="logo-link"><img src="logo.png" alt="logo" class="logo"/></a>
-            <a href="#form" target="_self" rel="noopener noreferrer" class="contact-link" ><i class="fa-solid fa-envelope"></i></a>
-            <a href="#form" target="_self" rel="noopener noreferrer" class="contact-link" >
+            <a href="/" class="logo-link"><img src="logo.png" alt="logo" class="logo"/></a>
+            <a href="#form" class="contact-link" ><i class="fa-solid fa-envelope"></i></a>
+            <a href="#form"  class="contact-link" >
                 <p class="contact-us-link-txt">Contact Us</p>
             </a>
         </header>
