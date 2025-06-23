@@ -173,7 +173,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
     formStatus.style.color = '#0D47A1';
     formStatus.textContent = 'Submitting... please wait';
   
-  fetch('https://revengine.onrender.com', {
+  fetch('https://revengine.onrender.com/submit-form', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(formData)
