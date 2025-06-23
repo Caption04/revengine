@@ -169,7 +169,11 @@ document.getElementById('form').addEventListener('submit', function (e) {
 
   const formData = { name, email, phone, service };
 
-  fetch('http://localhost:3000/submit-form', {
+  // Show submitting message
+    formStatus.style.color = '#0D47A1';
+    formStatus.textContent = 'Submitting... please wait';
+  
+  fetch('https://revengine.onrender.com', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(formData)

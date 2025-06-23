@@ -15,13 +15,14 @@ app.get('/', (req, res) => {
 app.post('/submit-form', async (req, res) => {
   const { name, email, phone, service } = req.body;
 
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'kgkatunga04@gmail.com',
-      pass: 'rscrpuozqpvtzxlt' 
-    }
-  });
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  }
+});
+
 
   const adminMail = {
     from: 'kgkatunga04@gmail.com',
