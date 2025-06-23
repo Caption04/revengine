@@ -1,5 +1,14 @@
 // Script By Rev Engine
 
+//Wakes render server up 
+window.addEventListener('DOMContentLoaded', () => {
+  // Wake up Render backend silently
+  fetch('https://revengine.onrender.com/')
+    .catch(() => {
+      // Don't show any error, just wake it up quietly
+    });
+});
+
 
 // Ensures the animation loads after the load
 window.addEventListener("load", () => {
